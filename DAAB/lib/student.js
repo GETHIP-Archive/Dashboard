@@ -1,10 +1,10 @@
 import { student } from "/lib/collections.js"
 student.schema = new SimpleSchema({
 	grade: {
-		type: Number,
+		type: "Integer",
 		max: 2
 	},
 	name: {
-		type: String
+		type: "String"
 	}
 });

@@ -1,6 +1,17 @@
 import { survey } from "/lib/collections.js";
 import { student } from "/lib/collections.js";
 
+question = new SimpleSchema({
+	type: {
+		type: "String"
+	},
+	prompt: {
+		type: "String"
+	},
+	required: {
+		type: "Boolean"
+	}
+})
 survey.schema = new SimpleSchema({
 	surveyId: {
 		type: "String"
@@ -10,5 +21,11 @@ survey.schema = new SimpleSchema({
 	},
 	assigned: {
 		type: [student]
+	},
+	length: {
+		type: "Integer"
+	},
+	question: {
+		type: ["String"]
 	}
 })
