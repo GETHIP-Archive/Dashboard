@@ -7,4 +7,3 @@ Dashboard for School Leaders project for GETHIP 2016-17.
 - James Saroka
 - Hannah Donahue
 - Jared Bledsoe
-- Gage Weber
