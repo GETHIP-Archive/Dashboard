@@ -9,7 +9,7 @@ question = new SimpleSchema({
 		type: "String"
 	},
 	required: {
-		type: "Boolean"
+		type: "String"
 	}
 })
 survey.schema = new SimpleSchema({

@@ -8,7 +8,6 @@ administrator.schema = new SimpleSchema({
 		type: "String"
 	},
 	surveys: {
-		type: ["String"],
-		description: "Array of survey ids"
+		type: ["String"]
 	}
 })
