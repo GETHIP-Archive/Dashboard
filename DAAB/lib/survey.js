@@ -26,6 +26,6 @@ survey.schema = new SimpleSchema({
 		type: "Integer"
 	},
 	question: {
-		type: ["String"]
+		type: [question]
 	}
 })
