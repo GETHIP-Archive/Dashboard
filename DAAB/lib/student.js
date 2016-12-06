@@ -6,5 +6,8 @@ student.schema = new SimpleSchema({
 	},
 	name: {
 		type: "String"
+	},
+	accountId: {
+		type: "String"
 	}
 });
