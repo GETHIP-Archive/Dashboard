@@ -1,0 +1,14 @@
+.active {
+    background-color: #444444 !important;
+	/* You wont be able to see the color because there's an anchor
+	tag whose background color is black within the list. Therefore the black color
+	kind of stacks up on color: #444444. */
+
+	border-bottom-width: 2px;
+
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #0397d7;
+    /* Change this hexcode to match the theme of your page */
+}
