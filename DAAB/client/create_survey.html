@@ -1,0 +1,17 @@
+<template name="create_survey">
+  <form class="survey">
+      <div class="form-group">
+        <label for="name">Student Name (First and Last):</label>
+        <input type="text" class="form-control" id="studentName" name="name">
+      </div>
+      <div class="form-group">
+        <label for="title">Project Name (As it appears on Slides):</label>
+        <input type="text" class="form-control" id="projectTitle" name="title">
+      </div>
+      <div class="form-group">
+        <label for="comment">Project Description:</label>
+        <textarea class="form-control" rows="5" id="projectDescription" name="desc"></textarea>
+      </div>
+    <button type="submit" class="btn btn-block center-block">Create survey</button>
+  </form>
+</template>

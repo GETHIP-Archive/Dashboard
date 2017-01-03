@@ -20,13 +20,13 @@ Meteor.methods({
   'student.create' (student) {
   	student.insert({
   		grade: student.grade,
-  		name: student.name
+  		name: student.name,
   		accountId: Meteor.user()
   	});
   },
   'student.update' (student) {
   	student.update({accountId: Meteor.user()}, {$set: {
-  		
+
   	}})
   },
   'response.create' (response) {

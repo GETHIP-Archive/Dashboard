@@ -13,6 +13,9 @@ question = new SimpleSchema({
 	}
 })
 survey.schema = new SimpleSchema({
+	title: {
+		type: "String"
+	},
 	surveyId: {
 		type: "String"
 	},
