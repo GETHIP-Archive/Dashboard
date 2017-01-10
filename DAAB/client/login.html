@@ -1,0 +1,151 @@
+<template name="login">
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Welcome to DAAB!</title>
+
+    <style>
+@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+.body{
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+	top: -20px;
+	left: -20px;
+	right: -40px;
+	bottom: -40px;
+	width: auto;
+	height: auto;
+	background-image: url(http://www.solidbackgrounds.com/images/3840x2160/3840x2160-paynes-grey-solid-color-background.jpg);
+	background-size: cover;
+	-webkit-filter: blur(0px);
+}
+
+.header{
+	position: absolute;
+	top: calc(50% - 35px);
+	left: calc(50% - 255px);
+
+}
+
+.header div{
+	float: left;
+	color: #4FC18A;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.header div span{
+	color: #FF665E !important;
+}
+
+.login{
+	position: absolute;
+	top: calc(50% - 75px);
+	left: calc(50% - 50px);
+	height: 150px;
+	width: 350px;
+	padding: 10px;
+
+}
+
+.login input[type=text]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+}
+
+.login input[type=password]{
+	width: 250px;
+	height: 30px;
+	background: transparent;
+	border: 1px solid rgba(255,255,255,0.6);
+	border-radius: 2px;
+	color: #fff;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 4px;
+	margin-top: 10px;
+}
+
+.login input[type=button]{
+	width: 260px;
+	height: 35px;
+	background: #fff;
+	border: 1px solid #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	color: #00203A;
+	font-family: 'Tahoma', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 6px;
+	margin-top: 10px;
+}
+
+.login input[type=button]:hover{
+	opacity: 0.8;
+}
+
+.login input[type=button]:active{
+	opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=password]:focus{
+	outline: none;
+	border: 1px solid rgba(255,255,255,0.9);
+}
+
+.login input[type=button]:focus{
+	outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+
+::-moz-input-placeholder{
+   color: rgba(255,255,255,0.6);
+}
+</style>
+
+
+
+</head>
+
+<body oncontextmenu="return false">
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>D<span>AAB</span></div>
+		</div>
+		<br>
+		<form name="login">
+		<div class="login">
+				<input type="text" placeholder="Username" name="userid"><br>
+				<input type="password" placeholder="Password" name="pswrd"><br>
+				<input type="button" onclick="" value="Login"/>
+				{{> loginButtons}}
+		</div>
+
+</form>
+</body>
+</template>
