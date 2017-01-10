@@ -3,7 +3,6 @@ import { student, survey, response, administrator } from '/lib/collections.js';
 
 Meteor.startup(() => {
   // code to run on server at startup
-  //Template['override-atPwdFormBtn'].replaces('atPwdFormBtn');
 });
 
 //TODO: Authentication

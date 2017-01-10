@@ -53,7 +53,35 @@
 
 }
 
-.login input[type=text]{
+.login .dropdown-menu {
+  display: block;
+  position: relative;
+  height: 245px;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+}
+
+.login #login-dropdown-list {
+  display: block;
+}
+
+#login-email-label {
+	display: none;
+}
+
+#login-password-label {
+	display: none;
+}
+a.login-link-text {
+  display: none;
+}
+
+a.login-close-text {
+	display: none;
+}
+
+.login input[type=email]{
 	width: 250px;
 	height: 30px;
 	background: transparent;
@@ -80,7 +108,7 @@
 	margin-top: 10px;
 }
 
-.login input[type=button]{
+#login-buttons-password{
 	width: 260px;
 	height: 35px;
 	background: #fff;
@@ -95,15 +123,15 @@
 	margin-top: 10px;
 }
 
-.login input[type=button]:hover{
+#login-buttons-password:hover{
 	opacity: 0.8;
 }
 
-.login input[type=button]:active{
+#login-buttons-password:active{
 	opacity: 0.6;
 }
 
-.login input[type=text]:focus{
+.login input[type=email]:focus{
 	outline: none;
 	border: 1px solid rgba(255,255,255,0.9);
 }
@@ -113,7 +141,7 @@
 	border: 1px solid rgba(255,255,255,0.9);
 }
 
-.login input[type=button]:focus{
+#login-buttons-password:focus{
 	outline: none;
 }
 
@@ -140,12 +168,12 @@
 		<br>
 		<form name="login">
 		<div class="login">
-				<input type="text" placeholder="Username" name="userid"><br>
-				<input type="password" placeholder="Password" name="pswrd"><br>
-				<input type="button" onclick="" value="Login"/>
 				{{> loginButtons}}
 		</div>
 
 </form>
+<script>
+
+</script>
 </body>
 </template>

@@ -4,5 +4,5 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import "./login.html"
 
 Template.login.helpers({
-	
+
 })
