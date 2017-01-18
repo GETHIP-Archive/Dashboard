@@ -1,173 +1,167 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<title>Welcome to DAAB!</title>
+	<style>
 
-  <title>Welcome to DAAB!</title>
+	@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+	@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+	html, body {
+    	margin: 0;
+    	height: 100%;
+		background-color: #536879;}
 
-    <style>
-@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+	#content{
+		padding-top: 20%;
+		padding-left: 25%;			
+	}
 
+	#acronym{
+		font-size: 15px;
+		font-family: 'Exo', sans-serif;
+		margin-left: 0%;
+		text-align: center;
+		width: 75%;
+		animation-name: slow;
+    	animation-duration: 10s;}
 
+	@keyframes slow {
+    	from {opacity: 0.0;}
+    	to {opacity: 0.75;}}	
 
-.body{
-    position: fixed;
-    overflow-y: scroll;
-    width: 100%;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
-	background-image: url(http://www.solidbackgrounds.com/images/3840x2160/3840x2160-paynes-grey-solid-color-background.jpg);
-	background-size: cover;
-	-webkit-filter: blur(0px);
+	.header{
+		margin-left: 0%;
+		float: left;
+		animation-name: fadeIn;
+    	animation-duration: 5s;}
 
-}
+	.header div{
+		color: #4FC18A;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 110px;
+		font-weight: 200;}
 
+	.header div span{
+		color: #FF665E;}
 
+	.login{
+		margin-left: 1%;
+		float: left;
+		padding: 10px;
+    	animation-name: fadeIn;
+    	animation-duration: 5s;}
 
-.header{
-	position: absolute;
-	top: calc(50% - 35px);
-	left: calc(50% - 255px);
+	@keyframes fadeIn {
+    from {opacity: 0.0;}
+    to {opacity: 1;}}	
 
-}
+	.login input[type=text]{
+		width: 250px;
+		height: 30px;
+		background: transparent;
+		border: 1px solid rgba(255,255,255,0.6);
+		border-radius: 2px;
+		color: #fff;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 4px;}
 
-.header div{
-	float: left;
-	color: #4FC18A;
-	font-family: 'Tahoma', sans-serif;
-	font-size: 40px;
-	font-weight: 200;
-}
+	.login input[type=password]{
+		width: 250px;
+		height: 30px;
+		background: transparent;
+		border: 1px solid rgba(255,255,255,0.6);
+		border-radius: 2px;
+		color: #fff;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 4px;
+		margin-top: 10px;}
 
-.header div span{
-	color: #FF665E !important;
-}
+	.login input[type=button]{
+		width: 260px;
+		height: 35px;
+		background: #fff;
+		border: 1px solid #fff;
+		cursor: pointer;
+		border-radius: 2px;
+		color: #00203A;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 6px;
+		margin-top: 10px;}
 
-.login{
-	position: absolute;
-	top: calc(50% - 75px);
-	left: calc(50% - 50px);
-	height: 150px;
-	width: 350px;
-	padding: 10px;
+	.login input[type=button]:hover{
+		opacity: 0.8;}
 
-}
+	.login input[type=button]:active{
+		opacity: 0.6;}
 
-.login input[type=text]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Tahoma', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-}
+	.login input[type=text]:focus{
+		outline: none;
+		border: 1px solid rgba(255,255,255,0.9);}
 
-.login input[type=password]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Tahoma', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-	margin-top: 10px;
-}
+	.login input[type=password]:focus{
+		outline: none;
+		border: 1px solid rgba(255,255,255,0.9);}
 
-.login input[type=button]{
-	width: 260px;
-	height: 35px;
-	background: #fff;
-	border: 1px solid #fff;
-	cursor: pointer;
-	border-radius: 2px;
-	color: #00203A;
-	font-family: 'Tahoma', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 6px;
-	margin-top: 10px;
-}
+	.login input[type=button]:focus{
+		outline: none;}
 
-.login input[type=button]:hover{
-	opacity: 0.8;
-}
+	::-webkit-input-placeholder{
+		color: rgba(255,255,255,0.6);}
 
-.login input[type=button]:active{
-	opacity: 0.6;
-}
+	::-moz-input-placeholder{
+		color: rgba(255,255,255,0.6);}
 
-.login input[type=text]:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
-}
-
-.login input[type=password]:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
-}
-
-.login input[type=button]:focus{
-	outline: none;
-}
-
-::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
-
-::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
-</style>
-
-
-
+	</style>
 </head>
+
+
 
 <body oncontextmenu="return false">
 
-  <div class="body"></div>
-		<div class="grad"></div>
-		<div class="header">
-			<div>D<span>AAB</span></div>
-		</div>
-		<br>
-		<form name="login">
+	<div id="content">
+	<div class="header">
+		<div>D<span>AAB</span></div>
+		<div id="acronym">Dashboard for Accountability and Administrative Bridging</div>
+	</div>
+	<br>
+	<form name="login">
 		<div class="login">
-				<input type="text" placeholder="Username" name="userid"><br>
-				<input type="password" placeholder="Password" name="pswrd"><br>
-				<input type="button" onclick="check(this.form)" value="Login"/>
+			<input type="text" placeholder="Username" name="userid"><br>
+			<input type="password" placeholder="Password" name="pswrd"><br>
+			<input type="button" onclick="check(this.form)" value="Login"/>
 		</div>
+	</div>
 
 
 
-</form>
-<script language="javascript">
-function check(form)
-{
+	</form>
+	<script language="javascript">
 
- if(form.userid.value == "Jamie Saroka" && form.pswrd.value == "123")
-  {
-    window.open('https://www.google.com/')
-  }
- else
- {
-   alert("Incorrect Username or Password, Please try again.")
-  }
-}
-</script>
+	window.onLoad = function animate(){
+
+	}
+
+
+	function check(form)
+	{
+
+		if(form.userid.value == "Jamie Saroka" && form.pswrd.value == "123")
+		{
+			window.open('https://www.google.com/')
+		}
+		else
+		{
+			alert("Incorrect Username or Password, Please try again.")
+		}
+	}
+	</script>
 </body>
 </html>
