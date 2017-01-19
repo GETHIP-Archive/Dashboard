@@ -1,179 +1,135 @@
 <template name="login">
 <head>
 
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<title>Welcome to DAAB!</title>
+	<style>
+	@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+	@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+	html, body {
+    	margin: 0;
+    	height: 100%;
+		background-color: #536879;}
+	#content{
+		padding-top: 20%;
+		padding-left: 25%;			
+	}
+	#acronym{
+		font-size: 15px;
+		font-family: 'Exo', sans-serif;
+		margin-left: 0%;
+		text-align: center;
+		width: 75%;
+		animation-name: slow;
+    	animation-duration: 10s;}
+	@keyframes slow {
+    	from {opacity: 0.0;}
+    	to {opacity: 0.75;}}	
+	.header{
+		margin-left: 0%;
+		float: left;
+		animation-name: fadeIn;
+    	animation-duration: 5s;}
+	.header div{
+		color: #4FC18A;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 110px;
+		font-weight: 200;}
+	.header div span{
+		color: #FF665E;}
+	.login{
+		margin-left: 1%;
+		float: left;
+		padding: 10px;
+    	animation-name: fadeIn;
+    	animation-duration: 5s;}
+	@keyframes fadeIn {
+    from {opacity: 0.0;}
+    to {opacity: 1;}}	
+	.login input[type=email]{
+		width: 250px;
+		height: 30px;
+		background: transparent;
+		border: 1px solid rgba(255,255,255,0.6);
+		border-radius: 2px;
+		color: #F2F2F2;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 4px;}
+	.login input[type=password]{
+		width: 250px;
+		height: 30px;
+		background: transparent;
+		border: 1px solid rgba(255,255,255,0.6);
+		border-radius: 2px;
+		color: #F2F2F2;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 4px;
+		margin-top: 10px;}
+	#login-buttons-password{
+		width: 260px;
+		height: 35px;
+		background: #F2F2F2;
+		border: 1px solid #F2F2F2;
+		cursor: pointer;
+		border-radius: 2px;
+		color: #00203A;
+		font-family: 'Tahoma', sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		padding: 6px;
+		margin-top: 10px;}
+	#login-buttons-password:hover{
+		opacity: 0.8;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
+	#login-buttons-password:active{
+		opacity: 0.6;}
+	.login input[type=email]:focus{
+		outline: none;
+		border: 1px solid rgba(255,255,255,0.9);
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
+	.login input[type=password]:focus{
+		outline: none;
+		border: 1px solid rgba(255,255,255,0.9);
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
+	.login input[type=button]:focus{
+		outline: none;}
+	::-webkit-input-placeholder{
+		color: rgba(255,255,255,0.6);}
+	::-moz-input-placeholder{
+		color: rgba(255,255,255,0.6);}
+	#login-email-label {
+		display: none;
+	}
 
-  <title>Welcome to DAAB!</title>
+	#login-password-label {
+		display: none;
+	}
+	a.login-link-text {
+	 	display: none;
+	}
 
-    <style>
-@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
-
-.body{
-    position: fixed;
-    overflow-y: scroll;
-    width: 100%;
-	top: -20px;
-	left: -20px;
-	right: -40px;
-	bottom: -40px;
-	width: auto;
-	height: auto;
-	background-image: url(http://www.solidbackgrounds.com/images/3840x2160/3840x2160-paynes-grey-solid-color-background.jpg);
-	background-size: cover;
-	-webkit-filter: blur(0px);
-}
-
-.header{
-	position: absolute;
-	top: calc(50% - 35px);
-	left: calc(50% - 255px);
-
-}
-
-.header div{
-	float: left;
-	color: #4FC18A;
-	font-family: 'Tahoma', sans-serif;
-	font-size: 40px;
-	font-weight: 200;
-}
-
-.header div span{
-	color: #FF665E !important;
-}
-
-.login{
-	position: absolute;
-	top: calc(50% - 75px);
-	left: calc(50% - 50px);
-	height: 150px;
-	width: 350px;
-	padding: 10px;
-
-}
-
-.login .dropdown-menu {
-  display: block;
-  position: relative;
-  height: 245px;
-  margin-left: auto;
-  margin-right: auto;
-  float: none;
-}
-
-.login #login-dropdown-list {
-  display: block;
-}
-
-#login-email-label {
-	display: none;
-}
-
-#login-password-label {
-	display: none;
-}
-a.login-link-text {
-  display: none;
-}
-
-a.login-close-text {
-	display: none;
-}
-
-.login input[type=email]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Tahoma', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-}
-
-.login input[type=password]{
-	width: 250px;
-	height: 30px;
-	background: transparent;
-	border: 1px solid rgba(255,255,255,0.6);
-	border-radius: 2px;
-	color: #fff;
-	font-family: 'Tahoma', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 4px;
-	margin-top: 10px;
-}
-
-#login-buttons-password{
-	width: 260px;
-	height: 35px;
-	background: #fff;
-	border: 1px solid #fff;
-	cursor: pointer;
-	border-radius: 2px;
-	color: #00203A;
-	font-family: 'Tahoma', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	padding: 6px;
-	margin-top: 10px;
-}
-
-#login-buttons-password:hover{
-	opacity: 0.8;
-}
-
-#login-buttons-password:active{
-	opacity: 0.6;
-}
-
-.login input[type=email]:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
-}
-
-.login input[type=password]:focus{
-	outline: none;
-	border: 1px solid rgba(255,255,255,0.9);
-}
-
-#login-buttons-password:focus{
-	outline: none;
-}
-
-::-webkit-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
-
-::-moz-input-placeholder{
-   color: rgba(255,255,255,0.6);
-}
-</style>
-
-
-
+	a.login-close-text {
+		display: none;
+	}
+	</style>
 </head>
 
 <body oncontextmenu="return false">
-
-  <div class="body"></div>
-		<div class="grad"></div>
+	<div id="content">
 		<div class="header">
 			<div>D<span>AAB</span></div>
+			<div id="acronym">Dashboard for Accountability and Administrative Bridging</div>
 		</div>
 		<br>
 		<form name="login">
-		<div class="login">
+			<div class="login">
 				{{> loginButtons}}
-		</div>
-
-</form>
-<script>
-
-</script>
+			</div>
+		</form>
+	</div>
 </body>
 </template>
