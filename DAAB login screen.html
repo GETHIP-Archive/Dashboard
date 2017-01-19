@@ -5,19 +5,16 @@
 	<meta charset="UTF-8">
 	<title>Welcome to DAAB!</title>
 	<style>
-
 	@import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
 	@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
 	html, body {
     	margin: 0;
     	height: 100%;
 		background-color: #536879;}
-
 	#content{
 		padding-top: 20%;
 		padding-left: 25%;			
 	}
-
 	#acronym{
 		font-size: 15px;
 		font-family: 'Exo', sans-serif;
@@ -26,67 +23,58 @@
 		width: 75%;
 		animation-name: slow;
     	animation-duration: 10s;}
-
 	@keyframes slow {
     	from {opacity: 0.0;}
     	to {opacity: 0.75;}}	
-
 	.header{
 		margin-left: 0%;
 		float: left;
 		animation-name: fadeIn;
     	animation-duration: 5s;}
-
 	.header div{
 		color: #4FC18A;
 		font-family: 'Tahoma', sans-serif;
 		font-size: 110px;
 		font-weight: 200;}
-
 	.header div span{
 		color: #FF665E;}
-
 	.login{
 		margin-left: 1%;
 		float: left;
 		padding: 10px;
     	animation-name: fadeIn;
     	animation-duration: 5s;}
-
 	@keyframes fadeIn {
     from {opacity: 0.0;}
     to {opacity: 1;}}	
-
 	.login input[type=text]{
 		width: 250px;
 		height: 30px;
 		background: transparent;
 		border: 1px solid rgba(255,255,255,0.6);
 		border-radius: 2px;
-		color: #fff;
+		color: #F2F2F2;
 		font-family: 'Tahoma', sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		padding: 4px;}
-
 	.login input[type=password]{
 		width: 250px;
 		height: 30px;
 		background: transparent;
 		border: 1px solid rgba(255,255,255,0.6);
 		border-radius: 2px;
-		color: #fff;
+		color: #F2F2F2;
 		font-family: 'Tahoma', sans-serif;
 		font-size: 16px;
 		font-weight: 400;
 		padding: 4px;
 		margin-top: 10px;}
-
 	.login input[type=button]{
 		width: 260px;
 		height: 35px;
-		background: #fff;
-		border: 1px solid #fff;
+		background: #F2F2F2;
+		border: 1px solid #F2F2F2;
 		cursor: pointer;
 		border-radius: 2px;
 		color: #00203A;
@@ -95,30 +83,25 @@
 		font-weight: 400;
 		padding: 6px;
 		margin-top: 10px;}
-
 	.login input[type=button]:hover{
-		opacity: 0.8;}
-
+		opacity: 0.8;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
 	.login input[type=button]:active{
 		opacity: 0.6;}
-
 	.login input[type=text]:focus{
 		outline: none;
-		border: 1px solid rgba(255,255,255,0.9);}
-
+		border: 1px solid rgba(255,255,255,0.9);
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
 	.login input[type=password]:focus{
 		outline: none;
-		border: 1px solid rgba(255,255,255,0.9);}
-
+		border: 1px solid rgba(255,255,255,0.9);
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
 	.login input[type=button]:focus{
 		outline: none;}
-
 	::-webkit-input-placeholder{
 		color: rgba(255,255,255,0.6);}
-
 	::-moz-input-placeholder{
 		color: rgba(255,255,255,0.6);}
-
 	</style>
 </head>
 
@@ -144,15 +127,10 @@
 
 	</form>
 	<script language="javascript">
-
 	window.onLoad = function animate(){
-
 	}
-
-
 	function check(form)
 	{
-
 		if(form.userid.value == "Jamie Saroka" && form.pswrd.value == "123")
 		{
 			window.open('https://www.google.com/')
