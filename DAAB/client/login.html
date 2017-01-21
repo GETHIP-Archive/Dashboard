@@ -12,7 +12,7 @@
 		background-color: #536879;}
 	#content{
 		padding-top: 20%;
-		padding-left: 25%;			
+		padding-left: 25%;
 	}
 	#acronym{
 		font-size: 15px;
@@ -24,7 +24,7 @@
     	animation-duration: 10s;}
 	@keyframes slow {
     	from {opacity: 0.0;}
-    	to {opacity: 0.75;}}	
+    	to {opacity: 0.75;}}
 	.header{
 		margin-left: 0%;
 		float: left;
@@ -45,7 +45,7 @@
     	animation-duration: 5s;}
 	@keyframes fadeIn {
     from {opacity: 0.0;}
-    to {opacity: 1;}}	
+    to {opacity: 1;}}
 	.login input[type=email]{
 		width: 250px;
 		height: 30px;
@@ -70,7 +70,7 @@
 		padding: 4px;
 		margin-top: 10px;}
 	#login-buttons-password{
-		width: 260px;
+		width: 250px;
 		height: 35px;
 		background: #F2F2F2;
 		border: 1px solid #F2F2F2;
@@ -104,18 +104,25 @@
 	#login-email-label {
 		display: none;
 	}
-
 	#login-password-label {
 		display: none;
 	}
 	a.login-link-text {
-	 	display: none;
-	}
-
-	a.login-close-text {
 		display: none;
 	}
+	a.login-close-text {
+	display: none;
+	}
+	#signup-link {
+		color: #4FC18A;
+	}
+	#forgot-password-link {
+		color: #4FC18A;
+	}
 	</style>
+	<script>
+		window.setTimeout(function(){document.getElementById('login-sign-in-link').click()}, 5000);
+	</script>
 </head>
 
 <body oncontextmenu="return false">
