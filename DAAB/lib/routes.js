@@ -33,3 +33,10 @@ FlowRouter.route('/home', {
     BlazeLayout.render("content", {content: "homepage"});
   }
 });
+
+FlowRouter.route("/response", {
+  name: "response",
+  action: function() {
+    BlazeLayout.render("content", {content: "response"})
+  }
+})
