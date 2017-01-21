@@ -1,0 +1,25 @@
+
+body {
+    background-color: #5D737E;
+}
+.cardTitle {
+    font-family: tahoma;
+    text-align: center;
+    margin: 5%;
+    color: #f2f2f2;
+}
+.cardContent {
+    font-family: tahoma;
+    text-align: center;
+    color: #f2f2f2;
+}
+.FR {
+  font-family: Tahoma;
+  display: block;
+  background-color: #f2f2f2;
+  margin: 0 auto;
+}
+.card{
+padding: 5%;
+  border: 9px solid #00203a;
+  border-radius: 10px;}
