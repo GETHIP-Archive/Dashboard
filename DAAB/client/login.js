@@ -5,4 +5,4 @@ import "./login.html"
 
 Template.login.helpers({
 
-})
+});

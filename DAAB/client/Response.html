@@ -1,42 +1,44 @@
-<html>
-<head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-<title>Response Examples</title>
-</head>
-<body>
-  <!--free response code  -->
+<template name="text">
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>Response Examples</title>
+  </head>
+  <body>
     <div class="card">
-  <h1 class="cardTitle"> DAAB Example Card </h1>
-  <p class="cardContent"> This is where the chosen question would be written.</p>
-  <textarea class="FR" rows="8" cols="50">
-  </textarea>
-</div>
-<!--free response code  -->
+      <h1 class="cardTitle"> DAAB Example Card </h1>
+      <p class="cardContent"> This is where the chosen question would be written.</p>
+      <textarea class="FR" rows="8" cols="50"></textarea>
+    </div>
+  </body>
+</template>
 
 <!--Multiple choice code  -->
-  <div class="card">
-<h1 class="cardTitle"> DAAB Example Card </h1>
-<p class="cardContent"> This is where the chosen question would be written.</p>
+<template name="multichoice">
+  <body>
+    <div class="card">
+      <h1 class="cardTitle"> DAAB Example Card </h1>
+      <p class="cardContent"> This is where the chosen question would be written.</p>
 
-<button class="button">this is where the question would be.</button>
-  <button class="button">this is where the question would be.</button>
-    <button class="button">this is where the question would be.</button>
       <button class="button">this is where the question would be.</button>
-
-</div>
+      <button class="button">this is where the question would be.</button>
+      <button class="button">this is where the question would be.</button>
+      <button class="button">this is where the question would be.</button>
+    </div>
+  </body>
+</template>
 <!--Multiple choice code -->
 
 <!--True false code  -->
-<div class="card">
-<h1 class="cardTitle"> DAAB Example Card </h1>
-<p class="cardContent"> This is where the chosen question would be written.</p>
+<template name="true">
+  <body>
+    <div class="card">
+      <h1 class="cardTitle">DAAB Example Card</h1>
+      <p class="cardContent">This is where the chosen question would be written.</p>
 
-<form class="buttonr">
-  <input type="radio" name="tf" value="Yes">Yes
-  <input type="radio" name="tf" value="No">No
-</form>
-
-</div>
-<!--True false code -->
-</body>
-</html>
+      <form class="buttonr">
+        <input type="radio" name="bool" value="Yes">Yes<br>
+        <input type="radio" name="bool" value="No">No
+      </form>
+    </div>
+  </body>
+</template>
