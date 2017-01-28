@@ -1,0 +1,4 @@
+git status
+git add -a
+git commit -m "Updates to Styling"
+git push origin master
