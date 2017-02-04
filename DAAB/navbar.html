@@ -1,35 +1,21 @@
 <template name="topNav">
-<head>
-    <title>DAAB</title>
-    <link type="text/css" rel="stylesheet" href="./navbar.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- </head>
-  <body>
-    <!--My Beautiful Navbar -->
-     <nav class="navbar navbar-inverse navbar-fixed-top" style="border-radius:0px;">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/login">DAAB</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="/home">Home</a></li>
+
+<div id="navBar">
+    <ul>
+      <li><a href="/login">DAAB</a></li>
+      <li><a href="/home">Home</a></li>
       <li><a href="/response">Response</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-           <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Sign Out
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Sign Out</a></li>
+      <li id="recent"><a href="/response">Recent</a></li>
 
-        </ul>
-        </li>
-
+      <div style="float:right;list-style-type:none;">
+        <li><a href="/home">Sign Up</a></li>
+        <li><a href="#">Log In</a></li>
+      </div>
     </ul>
   </div>
-</nav>
-</body>
+  <script>
+
+  </script>
+
 </template>
+

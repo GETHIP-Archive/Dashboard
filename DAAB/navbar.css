@@ -1,8 +1,8 @@
-.active {
+/*.active {
     background-color: #444444 !important;
-	/* You wont be able to see the color because there's an anchor
+	 You wont be able to see the color because there's an anchor
 	tag whose background color is black within the list. Therefore the black color
-	kind of stacks up on color: #444444. */
+	kind of stacks up on color: #444444. 
 
 	border-bottom-width: 2px;
 
@@ -10,5 +10,45 @@
 	border-bottom-style: solid;
 
 	border-bottom-color: #ff665e;
-    /* Change this hexcode to match the theme of your page */
+}*/
+
+
+/*Navbar*/
+#navBar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222;
+    font-size: 20px;
+   	font-family: 'Tahoma', sans-serif;
+}
+
+#menu {
+    width:30px; 
+    height:100%;
+    vertical-align: text-center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #9d9d9d;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #080808;
 }

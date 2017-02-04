@@ -1,44 +1,30 @@
-<template name="text">
+<!--Free response choice code  -->
+<template name="freeResponse">
   <head>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <title>Response Examples</title>
+    <link rel="stylesheet" type="text/css" href="Response.css">
+  <title>Free Response</title>
+
   </head>
   <body>
-    <div class="card">
-      <h1 class="cardTitle"> DAAB Example Card </h1>
-      <p class="cardContent"> This is where the chosen question would be written.</p>
-      <textarea class="FR" rows="8" cols="50"></textarea>
+
+    <div id="card">
+      <div class="content question">How could we improve our lunches?</div>
+      <textarea class="content response" required></textarea>
     </div>
+    <div id="submit">
+      <p class="submitText content">Submit</p>
+    </div>
+
   </body>
 </template>
 
-<!--Multiple choice code  -->
-<template name="multichoice">
-  <body>
-    <div class="card">
-      <h1 class="cardTitle"> DAAB Example Card </h1>
-      <p class="cardContent"> This is where the chosen question would be written.</p>
-
-      <button class="button">this is where the question would be.</button>
-      <button class="button">this is where the question would be.</button>
-      <button class="button">this is where the question would be.</button>
-      <button class="button">this is where the question would be.</button>
-    </div>
-  </body>
-</template>
-<!--Multiple choice code -->
 
 <!--True false code  -->
-<template name="true">
-  <body>
-    <div class="card">
-      <h1 class="cardTitle">DAAB Example Card</h1>
-      <p class="cardContent">This is where the chosen question would be written.</p>
+<template name="true"></template>
 
-      <form class="buttonr">
-        <input type="radio" name="bool" value="Yes">Yes<br>
-        <input type="radio" name="bool" value="No">No
-      </form>
-    </div>
-  </body>
-</template>
+
+
+
+
+
+
