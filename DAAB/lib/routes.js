@@ -34,6 +34,13 @@ FlowRouter.route('/home', {
   }
 });
 
+FlowRouter.route('/createSurvey', {
+  name: "homepage",
+  action: function() {
+    BlazeLayout.render("content", {content: "createSurvey"});
+  }
+});
+
 FlowRouter.route("/response", {
   name: "response",
   action: function() {
