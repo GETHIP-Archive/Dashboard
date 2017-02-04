@@ -1,15 +1,15 @@
 <template name="topNav">
 
 <div id="navBar">
-    <ul>
-      <li><a href="/login">DAAB</a></li>
-      <li><a href="/home">Home</a></li>
-      <li><a href="/response/1234">Response</a></li>
-      <li id="recent"><a href="/response/1234">Recent</a></li>
-      <li><a href="/createSurvey">Create Survey</a></li>
+    <ul id="navUl">
+      <li class="list"><a href="/login">DAAB</a></li>
+      <li class="list"><a href="/home">Home</a></li>
+      <li class="list"><a href="/response">Response</a></li>
+      <li id="recent" class="list"><a href="/response">Recent</a></li>
+
       <div style="float:right;list-style-type:none;">
-        <li><a href="/home">Sign Up</a></li>
-        <li><a href="#">Log In</a></li>
+        <li class="list"><a href="/login">Sign Up</a></li>
+        <li class="list"><a href="#">Log In</a></li>
       </div>
     </ul>
   </div>
@@ -18,3 +18,4 @@
   </script>
 
 </template>
+

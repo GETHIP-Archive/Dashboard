@@ -21,7 +21,7 @@
     width: 100%;
 }
 
-ul {
+#navUl {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -37,11 +37,11 @@ ul {
     vertical-align: text-center;
 }
 
-li {
+.list {
     float: left;
 }
 
-li a {
+.list a {
     display: block;
     color: #9d9d9d;
     text-align: center;
@@ -49,6 +49,6 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+.list a:hover:not(.active) {
     background-color: #080808;
 }
