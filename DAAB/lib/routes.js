@@ -44,6 +44,6 @@ FlowRouter.route('/createSurvey', {
 FlowRouter.route("/response", {
   name: "response",
   action: function() {
-    BlazeLayout.render("content", {content: "freeResponse"})
+    BlazeLayout.render("content", {content: "yesNo"})
   }
 })
