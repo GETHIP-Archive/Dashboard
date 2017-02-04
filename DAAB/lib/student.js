@@ -7,7 +7,13 @@ student.schema = new SimpleSchema({
 	name: {
 		type: "String"
 	},
-	accountId: {
+	studentId: {
 		type: "String"
+	},
+	assignedSurveys: {
+		type: ["String"]
+	},
+	completedSurveys: {
+		type: ["String"]
 	}
 });

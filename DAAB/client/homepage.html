@@ -88,22 +88,15 @@
 		<table>
 			<tr>
 				<th class="header">Pending Surveys</th>
-				<th class="header">Completed</th> 
+				<th class="header">Completed</th>
 			</tr>
+			{{#each list}}
 			<tr>
 				<!-- First td=pending, Second td=completed -->
-
-				<td class="pending">How safe do feel at school during the day?<br><span class="questionIncomplete"> (0/5)</span></td>
-				<td class="complete">How rigorous do you feel the curriculum offered in the school is?<br><span class="questionComplete"> (8/8)</span></td>
+				<td class="pending">{{assigned}}<br><span class="questionIncomplete">{{#if assigned}}(0/{{assignedLength}}){{/if}}</span></td>
+				<td class="complete">{{completed}}<br><span class="questionComplete"> ({{completedLength}}/{{completedLength}})</span></td>
 			</tr>
-			<tr>
-				<td class="pending">Would you be in favor of a banning of cell phones during instruction time in class?<br><span class="questionIncomplete"> (5/6)</span></td>
-				<td class="complete">How do you feel about the lunch choices offered in the cafeteria?<br><span class="questionComplete"> (2/2)</span></td>
-			</tr>
-			<tr>
-				<td class="pending">Do we offer enough extra curricular activities?<br><span class="questionIncomplete"> (2/10)</span></td>
-				<td class="complete">If we were to offer five new curricular activities which one would you be most interested in?<br><span class="questionComplete"> (5/5)</span></td>
-			</tr>
+			{{/each}}
 
 		</table>
 	</div>

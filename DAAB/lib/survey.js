@@ -22,10 +22,7 @@ survey.schema = new SimpleSchema({
 	administratorId: {
 		type: "String"
 	},
-	assigned: {
-		type: [student]
-	},
-	length: {
+	surveyLength: {
 		type: "Integer"
 	},
 	question: {
