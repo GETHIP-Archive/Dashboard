@@ -9,16 +9,20 @@ FlowRouter.route('/', {
   }
 });
 
-FlowRouter.route('/students/:accountId', {
-  name: "Students",
+FlowRouter.route('/response/:surveyId', {
+  name: "Response",
   action: function() {
-    if(admin.includes(Meteor.userId())){
-      BlazeLayout.render("content", {content: "iVotes"});
-    }else{
-       BlazeLayout.render("content", {content: "denied"})
-    }
+      BlazeLayout.render("content", {content: "yesNo"});
   }
 });
+
+/*
+if(admin.includes(Meteor.userId())){
+  BlazeLayout.render("content", {content: "freeResponse"});
+}else{
+   BlazeLayout.render("content", {content: "denied"})
+}
+*/
 
 FlowRouter.route('/login', {
   name: "login",
@@ -40,10 +44,3 @@ FlowRouter.route('/createSurvey', {
     BlazeLayout.render("content", {content: "createSurvey"});
   }
 });
-
-FlowRouter.route("/response", {
-  name: "response",
-  action: function() {
-    BlazeLayout.render("content", {content: "freeResponse"})
-  }
-})
