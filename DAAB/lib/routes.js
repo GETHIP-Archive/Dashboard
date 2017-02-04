@@ -12,7 +12,7 @@ FlowRouter.route('/', {
 FlowRouter.route('/response/:surveyId', {
   name: "Response",
   action: function() {
-      BlazeLayout.render("content", {content: "yesNo"});
+      BlazeLayout.render("content", {content: "multipleChoice"});
   }
 });
 
