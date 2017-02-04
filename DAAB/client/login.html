@@ -10,10 +10,11 @@
     	margin: 0;
     	height: 100%;
 		background-color: #536879;}
+
 	#content{
 		padding-top: 20%;
-		padding-left: 25%;
-	}
+		padding-left: 25%;}
+
 	#acronym{
 		font-size: 15px;
 		font-family: 'Exo', sans-serif;
@@ -25,19 +26,23 @@
 	@keyframes slow {
     	from {opacity: 0.0;}
     	to {opacity: 0.75;}}
+
 	.header{
 		margin-left: 0%;
 		float: left;
 		animation-name: fadeIn;
     	animation-duration: 5s;}
+
 	.header div{
 		color: #4FC18A;
 		font-family: 'Tahoma', sans-serif;
 		font-size: 110px;
 		font-weight: 200;}
+
 	.header div span{
 		color: #FF665E;}
-	.login{
+
+	.login-buttons-dropdown-align-{
 		margin-left: 1%;
 		float: left;
 		padding: 10px;
@@ -46,7 +51,9 @@
 	@keyframes fadeIn {
     from {opacity: 0.0;}
     to {opacity: 1;}}
+
 	.login input[type=email]{
+
 		width: 250px;
 		height: 30px;
 		background: transparent;
@@ -57,6 +64,7 @@
 		font-size: 16px;
 		font-weight: 400;
 		padding: 4px;}
+
 	.login input[type=password]{
 		width: 250px;
 		height: 30px;
@@ -69,9 +77,10 @@
 		font-weight: 400;
 		padding: 4px;
 		margin-top: 10px;}
-	#login-buttons-password{
-		width: 250px;
-		height: 35px;
+
+	#login-buttons-password, .login-button, .login-button-form-submit{
+		width: 95%;
+		height: 15%;
 		background: #F2F2F2;
 		border: 1px solid #F2F2F2;
 		cursor: pointer;
@@ -79,49 +88,54 @@
 		color: #00203A;
 		font-family: 'Tahoma', sans-serif;
 		font-size: 16px;
-		font-weight: 400;
 		padding: 6px;
-		margin-top: 10px;}
+		margin-top: 10px;
+		text-align: center;}
+
 	#login-buttons-password:hover{
 		opacity: 0.8;
 		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
+
 	#login-buttons-password:active{
 		opacity: 0.6;}
+
 	.login input[type=email]:focus{
 		outline: none;
 		border: 1px solid rgba(255,255,255,0.9);
 		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
+
 	.login input[type=password]:focus{
 		outline: none;
 		border: 1px solid rgba(255,255,255,0.9);
 		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.35);}
+
 	.login input[type=button]:focus{
 		outline: none;}
+
 	::-webkit-input-placeholder{
 		color: rgba(255,255,255,0.6);}
+
 	::-moz-input-placeholder{
 		color: rgba(255,255,255,0.6);}
-	#login-email-label {
-		display: none;
-	}
-	#login-password-label {
-		display: none;
-	}
+
 	a.login-link-text {
 		display: none;
 	}
 	a.login-close-text {
-	display: none;
+		display: none;
 	}
-	#signup-link {
-		color: #4FC18A;
+	label {
+		display: none;
 	}
-	#forgot-password-link {
-		color: #4FC18A;
-	}
+	.additional-link-container {
+		margin-top: 10px;
+		text-align: center;
+		color: #4FC18A;}
+	.additional-link-container:hover {
+		cursor: pointer;}
 	</style>
 	<script>
-		window.setTimeout(function(){document.getElementById('login-sign-in-link').click()}, 5000);
+		window.setTimeout(function(){document.getElementById('login-sign-in-link').click()}, 3000);
 	</script>
 </head>
 
