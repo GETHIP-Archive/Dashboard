@@ -37,6 +37,6 @@ FlowRouter.route('/home', {
 FlowRouter.route("/response", {
   name: "response",
   action: function() {
-    BlazeLayout.render("content", {content: "true"})
+    BlazeLayout.render("content", {content: "freeResponse"})
   }
 })
