@@ -1,3 +1,15 @@
+<template name="surveys">
+  {{#each freeR}}
+    {{> freeResponse}}
+  {{/each}}
+  {{#each yesN}}
+    {{> yesNo}}
+  {{/each}}
+  {{#each multipleC}}
+    {{> multipleChoice}}
+  {{/each}}
+</template>
+
 <!--Free response choice code  -->
 <template name="freeResponse">
   <head>

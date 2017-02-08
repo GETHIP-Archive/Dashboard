@@ -11,12 +11,10 @@ Template.homepage.helpers({
       var master = [];
       currentStudent.assignedSurveys.forEach(function(element, index){
         var currentSurveyId = survey.findOne({surveyId: element});
-        master.push({assigned: currentSurveyId.title, assignedLength: currentSurveyId.surveyLength});
+        master.push({assigned: currentSurveyId.title, assignedLength: currentSurveyId.surveyLength, assignedLink: "/response/" + currentSurveyId.surveyId});
       });
       currentStudent.completedSurveys.forEach(function(element, index){
         var currentSurveyId = survey.findOne({surveyId: element});
-        console.log(currentSurveyId)
-        console.log(currentSurveyId.surveyLength);
         if(master[index] == undefined){
           master[index] = {}
           master[index]["completed"] = currentSurveyId.title;
@@ -26,7 +24,10 @@ Template.homepage.helpers({
           master[index]["completedLength"] = currentSurveyId.surveyLength;
         }
       });
-      console.log(master)
       return master;
     }
 });
+
+Template.homepage.events({
+
+})

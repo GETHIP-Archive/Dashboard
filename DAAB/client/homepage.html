@@ -79,6 +79,18 @@
 		color: #4FC18A;
 	}
 
+	.pending a {
+		display: block;
+		text-decoration: none;
+		color: #0d0d0d;
+	}
+
+	.complete a {
+		display: block;
+		text-decoration: none;
+		color: #0d0d0d;
+	}
+
 	</style>
 
 </head>
@@ -94,8 +106,8 @@
 			{{#each list}}
 			<tr>
 				<!-- First td=pending, Second td=completed -->
-				<td class="pending">{{assigned}}<br><span class="questionIncomplete">{{#if assigned}}(0/{{assignedLength}}){{/if}}</span></td>
-				<td class="complete">{{completed}}<br><span class="questionComplete"> ({{completedLength}}/{{completedLength}})</span></td>
+				<td class="pending"><a href="{{assignedLink}}">{{assigned}}<br><span class="questionIncomplete">{{#if assigned}}(0/{{assignedLength}}){{/if}}</span></a></td>
+				<td class="complete">{{completed}}<br><span class="questionComplete">{{#if completed}}({{completedLength}}/{{completedLength}}){{/if}}</span></td>
 			</tr>
 			{{/each}}
 

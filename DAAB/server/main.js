@@ -5,7 +5,7 @@ Meteor.startup(() => {
   // code to run on server at startup
   student.remove({});
   survey.remove({});
-  student.insert({"grade": 2, "name": "Timmy", "studentId": "oYxje296j82vuHLAp", "assignedSurveys": ["2i2n33j","n23n2oedi"], "completedSurveys": ["oihnawe","aoidsh","oihadsbn"]});
+  student.insert({"grade": 2, "name": "Timmy", "studentId": "oYxje296j82vuHLAp", "assignedSurveys": ["oihnawe","aoidsh"], "completedSurveys": ["2i2n33j","oihadsbn","n23n2oedi"]});
   survey.insert({"title": "Safety Questions", "surveyId": "2i2n33j", "surveyLength": 5});
   survey.insert({"title": "Food Questions", "surveyId": "n23n2oedi", "surveyLength": 2});
   survey.insert({"title": "College Readiness Questions", "surveyId": "oihadsbn", "surveyLength": 3});
