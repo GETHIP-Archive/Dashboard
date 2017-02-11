@@ -3,9 +3,9 @@ import { FlowRouter } from 'meteor/kadira:flow-router';
 import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
 FlowRouter.route('/', {
-  name: "sHome",
+  name: "About",
   action: function() {
-    BlazeLayout.render("content", {content: "studentView"});
+    BlazeLayout.render("content", {content: "about"});
   }
 });
 
@@ -42,5 +42,19 @@ FlowRouter.route('/createSurvey', {
   name: "homepage",
   action: function() {
     BlazeLayout.render("content", {content: "createSurvey"});
+  }
+});
+
+FlowRouter.route('/comments', {
+  name: "General Comments",
+  action: function(){
+    BlazeLayout.render("content", {content: "comments"})
+  }
+});
+
+FlowRouter.route('/dashboard', {
+  name: "Administrative Dashboard",
+  action: function(){
+    BlazeLayout.render("content", {content: "dashboard"})
   }
 });

@@ -11,7 +11,7 @@ Template.surveys.helpers({
 	yesN: function(){
 		return [1]
 	},
-	multiC: function(){
+	multipleC: function(){
 		return [1]
 	}
 });
