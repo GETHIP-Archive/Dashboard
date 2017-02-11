@@ -2,9 +2,10 @@ body, html {
   margin: 0;
   height: 100%;
   background-color: #536879;
+  overflow-y: hidden;
 }
 
-#card {
+#card3 {
   width: 65%;
   height: 50%;
   border: 4px solid #4FC18A;
@@ -34,15 +35,15 @@ body, html {
   padding-top: 10px;
 }
 
-.content {
-  text-align: left;
+.content3 {
+  text-align: center;
   color: #00203A;
   font-size: 35px;
   font-family: tahoma;
 }
 
 
-.response {
+.response3 {
   margin: 0% 5% 5% 5%;
   resize: none;
   height: 55%;
@@ -53,7 +54,7 @@ body, html {
 
 .caq{
   background-color: #5D737E;
-
+  
   text-align: center;
 border-radius: 4px;
 display: block;
