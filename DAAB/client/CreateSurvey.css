@@ -2,7 +2,6 @@ body, html {
   margin: 0;
   height: 100%;
   background-color: #536879;
-  overflow-y: hidden;
 }
 
 #card3 {
@@ -54,7 +53,7 @@ body, html {
 
 .caq{
   background-color: #5D737E;
-  
+
   text-align: center;
 border-radius: 4px;
 display: block;
