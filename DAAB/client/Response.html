@@ -8,6 +8,9 @@
   {{#each multipleC}}
     {{> multipleChoice}}
   {{/each}}
+  <div id="submit">
+    <p class="submitText content">Submit</p>
+  </div>
 </template>
 
 <!--TODO create 1-10 scale -->
@@ -22,11 +25,8 @@
   <body>
 
     <div id="card">
-      <div class="content question">How could we improve our lunches?</div>
-      <textarea class="content response" required></textarea>
-    </div>
-    <div id="submit">
-      <p class="submitText content">Submit</p>
+      <div class="content question">{{prompt}}</div>
+      <textarea class="content response" rows="4"></textarea>
     </div>
 
   </body>
@@ -43,14 +43,11 @@
 <body>
 
   <div id="card">
-    <div class="content question">How could we improve our lunches?</div>
+    <div class="content question">{{prompt}}</div>
     <ul class="answers">
       <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Yes</label><br/>
       <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">No</label><br/>
     </ul>
-  </div>
-  <div id="submit">
-    <p class="submitText content">Submit</p>
   </div>
 
 </body>
@@ -67,16 +64,12 @@
   <body>
 
     <div id="card">
-      <div class="content question">How could we improve our lunches?</div>
+      <div class="content question">{{prompt}}</div>
       <ul class="answers">
-        <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Answer 1</label><br/>
-        <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">Answer 2</label><br/>
-        <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">Answer 3</label><br/>
-        <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">Answer 4</label><br/>
+        {{#each answers}}
+          <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">{{this}}</label><br/>
+        {{/each}}
       </ul>
-    </div>
-    <div id="submit">
-      <p class="submitText content">Submit</p>
     </div>
 
   </body>

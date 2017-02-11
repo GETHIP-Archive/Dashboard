@@ -8,8 +8,8 @@ question = new SimpleSchema({
 	prompt: {
 		type: "String"
 	},
-	required: {
-		type: "String"
+	answers: {
+		type: "Array"
 	}
 })
 survey.schema = new SimpleSchema({
