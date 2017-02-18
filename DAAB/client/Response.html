@@ -26,7 +26,7 @@
 
     <div id="card">
       <div class="content question">{{prompt}}</div>
-      <textarea id="{{id}}free" class="content response" rows="4"></textarea>
+      <textarea class="content response" rows="4"></textarea>
     </div>
 
   </body>
@@ -45,8 +45,8 @@
   <div id="card">
     <div class="content question">{{prompt}}</div>
     <ul class="answers">
-      <input type="radio" value="Yes" id="{{id}}y"><label for="{{id}}y">Yes</label><br/>
-      <input type="radio" value="No" id="{{id}}n"><label for="{{id}}n">No</label><br/>
+      <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Yes</label><br/>
+      <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">No</label><br/>
     </ul>
   </div>
 
@@ -67,9 +67,31 @@
       <div class="content question">{{prompt}}</div>
       <ul class="answers">
         {{#each answers}}
-          <input type="radio" name="q1" value="a" id="{{id}}multi"><label for="{{id}}multi">{{this}}</label><br/>
+          <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">{{this}}</label><br/>
         {{/each}}
       </ul>
+    </div>
+
+  </body>
+</template>
+
+
+<!--One through five choice code  -->
+<template name="oneToFive">
+  <head>
+    <link rel="stylesheet" type="text/css" href="oneToFive.css">
+  <title>Multiple Choice</title>
+
+  </head>
+  <body>
+
+    <div id="card">
+      <div class="content question">{{prompt}}</div>
+      <div class="options">1</div>
+      <div class="options">2</div>
+      <div class="options">3</div>
+      <div class="options">4</div>
+      <div class="options">5</div>
     </div>
 
   </body>
