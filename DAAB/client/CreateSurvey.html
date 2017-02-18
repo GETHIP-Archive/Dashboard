@@ -4,25 +4,42 @@
     <link rel="json" href="/css/master.css">
   <title>Create Survey</title>
 </head>
+
   <body>
 
-    <div id="card3">
-      <div class="content3 caq"><textarea name="CAS" style="width: 90%; background-color: #5D737E; color: #f2f2f2;
-        font-size: 90%; resize: none;"></textarea></div>
-<div class="content3 response3">
-  <button type="button" name="button" style="background-color: #00203A; color: white; padding: 16px; font-size: 16px; border: none; cursor: pointer;">Free Response</button>
-  <button type="button" name="button" style="background-color: #00203A; color: white; padding: 16px; font-size: 16px; border: none; cursor: pointer;">Yes or No</button>
+  <div id="card" style="overflow:hidden;">
+    <textarea class="textarea-content response" id="createTitle" rows="1" placeholder="Survey question"></textarea>
+      
+      <!-- Yes/No -->
+      <a class="option" id="option1"><div class="createOptions">
+        <ul class="answers">
+          <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">Yes</label><br/>
+          <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">No</label><br/>
+        </ul>
+      </div></a>
 
-  <div class="dropdown">
-    <button class="dropbtn">Multiple Choice</button>
-    <div class="dropdown-content">
-      <textarea name="name" rows="2" cols="8" style="resize: none;"></textarea>
-      <textarea name="name" rows="2" cols="8" style="resize: none;"></textarea>
-      <textarea name="name" rows="2" cols="8" style="resize: none;"></textarea>
-      <textarea name="name" rows="2" cols="8" style="resize: none;"></textarea>
-    </div>
+      <!-- Multiple Choice -->
+      <a class="option" id="option2"><div class="createOptions">
+        <textarea class="response multipleChoiceOption" rows="1" placeholder="Option 1"></textarea>
+        <textarea class="response multipleChoiceOption" rows="1" placeholder="Option 2"></textarea>
+        <textarea class="response multipleChoiceOption" rows="1" placeholder="Option 3"></textarea>
+        <textarea class="response multipleChoiceOption" rows="1" placeholder="Option 4"></textarea>
+      </div></a>
+
+      <!-- One-Five -->
+      <a class="option" id="option3"><div class="createOptions oneToFiveCard">
+        <input type="radio" value="one">Strongly Disagree<br>
+        <input type="radio" value="one">Disagree<br>
+        <input type="radio" value="one">Neutral<br>
+        <input type="radio" value="one">Agree<br>
+        <input type="radio" value="one">Strongly Agree<br>
+      </div></a>
+
+      <div class="createOptions">Survey type 4</div>
   </div>
-</div>
-</div>
+    <div id="submit">
+    <p class="submitText content">Submit</p>
+  </div>
+  
 </body>
 </template>
