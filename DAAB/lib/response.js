@@ -11,6 +11,6 @@ response.schema = new SimpleSchema({
 		type: "Date"
 	},
 	answer: {
-		type: ["String"]
+		type: "Object"
 	}
 })

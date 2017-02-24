@@ -8,21 +8,19 @@ Meteor.startup(() => {
   student.insert({"grade": 2, "name": "Timmy", "studentId": "oYxje296j82vuHLAp", "assignedSurveys": ["oihnawe","aoidsh"], "completedSurveys": ["2i2n33j","oihadsbn","n23n2oedi"]});
   var mentalHealth = [{
     type: "yesNo",
-    prompt: "Do you suffer from Depression?"
+    prompt: "Do you suffer from Depression?",
+    id: "r2EbAg3REfivCZgtM"
   },
   {
     type: "multipleChoice",
     prompt: "How have you felt this past week?",
-    answers: ["Tired", "Entergitc", "Calm", "Angry","Aggressive"]
-  },
-  {
-    type: "multipleChoice",
-    prompt: "How have you felt this past week?",
-    answers: ["Tired", "Entergitc", "Calm", "Angry","Aggressive"]
+    answers: ["Tired", "Entergitc", "Calm", "Angry", "Aggressive"],
+    id: "pTDymBukr5dzFmJ8m"
   },
   {
     type: "freeResponse",
-    prompt: "Tell us about the time you were last sad"
+    prompt: "Tell us about the time you were last sad",
+    id: "pw2J2eeZ7Xg2rNk2F"
   }]
   survey.insert({"title": "Safety Questions", "surveyId": "2i2n33j", "surveyLength": 5});
   survey.insert({"title": "Food Questions", "surveyId": "n23n2oedi", "surveyLength": 2});
