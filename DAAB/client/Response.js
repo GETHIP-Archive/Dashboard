@@ -1,6 +1,6 @@
 import { Template } from 'meteor/templating';
 import { survey } from "/lib/collections.js";
-import { response } from "/lib/response.js";
+import { response } from "/lib/collections.js";
 import { student } from "/lib/collections.js";
 import { FlowRouter } from 'meteor/kadira:flow-router';
 
@@ -56,10 +56,10 @@ Template.surveys.events({
 					freeResponse.push(value);
 				}
 				if(value.type == "yesNo"){
-					yesNo.push(value)
+					yesNo.push(value);
 				}
 				if(value.type == "multipleChoice"){
-					multipleChoice.push(value)
+					multipleChoice.push(value);
 				}
 			});
 
@@ -85,6 +85,7 @@ Template.surveys.events({
 			finalResponse.surveyId = FlowRouter.getParam("surveyId");
 			finalResponse.studentId = Meteor.userId();
 			finalResponse.date = new Date().toString();
-			console.log(finalResponse)
+			student.update({"_id": student.findOne({"name": "Timmy"})._id}, {$push: {"completedSurveys": FlowRouter.getParam("surveyId")}, $pull: {"assignedSurveys": FlowRouter.getParam("surveyId")}})
+			//response.insert(finalResponse);
 	}
 })
