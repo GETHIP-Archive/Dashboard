@@ -5,7 +5,6 @@ body, html {
 }
 
 #createTitle {
-<<<<<<< HEAD
 	margin: 5%;
 }
 
@@ -15,8 +14,7 @@ body, html {
 	width: 40%;
 	height: 150px;
 	padding: 5%;
-=======
- margin: 5%;
+	margin: 5%;
 }
 
 .createOptions {
@@ -24,34 +22,9 @@ body, html {
   float: left;
   width: 40%;
   padding: 5%;
->>>>>>> 4e55feb8c23ea45d84283d561a04bfa76b6e97a4
 }
 
 .createOptions:hover {
 	background-color: #536879;
 	cursor: pointer;
-}
-
-<<<<<<< HEAD
-#createResponse {
-	height: 10%;
-=======
-.multipleChoiceOption {
-	font-size: 10px;
-}
-
-.oneToFive {
-	float: left;
-	padding: 5%;
-	width: 20%;
-}
-
-.oneToFiveCard {
-	overflow: hidden;
-	font-size: 10px;
-}
-
-.createOptions:active {
-		background-color: #ff665e;
->>>>>>> 4e55feb8c23ea45d84283d561a04bfa76b6e97a4
 }
