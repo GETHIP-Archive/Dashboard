@@ -43,7 +43,6 @@ body, html {
 .question {
   margin: 5%;
   font-family: 'Tahoma', sans-serif;
-  border-bottom: 4px solid #4FC18A;
 }
 
 .response {
