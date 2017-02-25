@@ -1,0 +1,26 @@
+body, html {
+	margin: 0;
+	height: 100%;
+	background-color: #536879;
+}
+
+#createTitle {
+	margin: 5%;
+}
+
+.createOptions {
+	font-size: 25px;
+	float: left;
+	width: 40%;
+	height: 150px;
+	padding: 5%;
+}
+
+.createOptions:hover {
+	background-color: #536879;
+	cursor: pointer;
+}
+
+#createResponse {
+	height: 10%;
+}
