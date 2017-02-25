@@ -14,17 +14,25 @@ body, html {
 	width: 40%;
 	height: 150px;
 	padding: 5%;
-	margin: 5%;
 }
 
 .createOptions {
-  font-size: 25px;
-  float: left;
-  width: 40%;
-  padding: 5%;
+	font-size: 25px;
+	float: left;
+	width: 40%;
+	padding: 5%;
 }
 
 .createOptions:hover {
 	background-color: #536879;
 	cursor: pointer;
+}
+
+.oneToFiveCard {
+	overflow: hidden;
+	font-size: 10px;
+}
+
+#createResponse {
+	height: 10%;
 }
