@@ -1,10 +1,21 @@
 body, html {
-  margin: 0;
-  height: 100%;
-  background-color: #536879;
+	margin: 0;
+	height: 100%;
+	background-color: #536879;
 }
 
 #createTitle {
+<<<<<<< HEAD
+	margin: 5%;
+}
+
+.createOptions {
+	font-size: 25px;
+	float: left;
+	width: 40%;
+	height: 150px;
+	padding: 5%;
+=======
  margin: 5%;
 }
 
@@ -13,6 +24,7 @@ body, html {
   float: left;
   width: 40%;
   padding: 5%;
+>>>>>>> 4e55feb8c23ea45d84283d561a04bfa76b6e97a4
 }
 
 .createOptions:hover {
@@ -20,6 +32,10 @@ body, html {
 	cursor: pointer;
 }
 
+<<<<<<< HEAD
+#createResponse {
+	height: 10%;
+=======
 .multipleChoiceOption {
 	font-size: 10px;
 }
@@ -37,4 +53,5 @@ body, html {
 
 .createOptions:active {
 		background-color: #ff665e;
+>>>>>>> 4e55feb8c23ea45d84283d561a04bfa76b6e97a4
 }
