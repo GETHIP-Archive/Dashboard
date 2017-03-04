@@ -14,13 +14,7 @@ body, html {
 	width: 40%;
 	height: 150px;
 	padding: 5%;
-}
-
-.createOptions {
-	font-size: 25px;
-	float: left;
-	width: 40%;
-	padding: 5%;
+	transition: width 2s, height 2s, box-shadow 2s, text-align 2s;
 }
 
 .createOptions:hover {
@@ -28,13 +22,30 @@ body, html {
 	cursor: pointer;
 }
 
+.createOptions:focus, .createOptions textarea:focus {
+	outline: none;
+	width: 90%;
+	height: 220px;
+	box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.35);
+	text-align: center;
+}
+
 .oneToFiveCard {
 	overflow: hidden;
 	font-size: 10px;
-	font-family: Tahoma;
-	color: #00203a;
 }
 
 #createResponse {
 	height: 10%;
 }
+
+.optionSubmit {
+    bottom: 0;
+    width: 100%;
+}
+
+*|*:matches(:hover, :focus) {
+	background-color: red;
+}
+
+

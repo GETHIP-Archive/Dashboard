@@ -5,13 +5,14 @@
   <title>Create Survey</title>
 </head>
 
+
   <body>
 
   <div id="card" style="overflow:hidden;">
     <textarea class="textarea-content response" id="createTitle" rows="1" placeholder="Survey question"></textarea>
 
     <!-- Yes/No -->
-    <div class="createOptions">
+    <div class="createOptions" tabindex="1">
       <ul class="answers">
         <input type="radio" value="a" class="q1a" name="yesNo"><label for="q1a">Yes</label><br/>
         <input type="radio" value="b" class="q1b" name="yesNo"><label for="q1b">No</label><br/>
@@ -19,15 +20,15 @@
     </div>
 
       <!-- Multiple Choice -->
-    <div class="createOptions">
+    <div class="createOptions" tabindex="2">
       <textarea class="response multipleChoiceOption" id="createResponse" rows="1" placeholder="Option 1"></textarea>
       <textarea class="response multipleChoiceOption" id="createResponse" rows="1" placeholder="Option 2"></textarea>
       <textarea class="response multipleChoiceOption" id="createResponse" rows="1" placeholder="Option 3"></textarea>
-      <textarea class="response multipleChoiceOption" id="createResponse" rows="1" placeholder="Option 4"></textarea>
+      <textarea class="response multipleChoiceOption" id="createResponse" rows="1" placeholder="Option 4"></textarea>    
     </div>
 
       <!-- One-Five-->
-    <div class="createOptions oneToFiveCard">
+    <div class="createOptions oneToFiveCard" tabindex="3">
       <input type="radio" class="q1a" value="one" name="oneToFive">Strongly Disagree<br>
       <input type="radio" class="q1a" value="one" name="oneToFive">Disagree<br>
       <input type="radio" class="q1a" value="one" name="oneToFive">Neutral<br>
@@ -36,14 +37,14 @@
     </div>
 
       <!-- Free-Response-->
-    <div class="createOptions">
+    <div class="createOptions" tabindex="4">
       <textarea class="content response" rows="4" placeholder="Free response"></textarea>
     </div>
 
     </div>
-      <div id="submit">
-      <p class="submitText content">Submit</p>
-    </div>
+
   
+
 </body>
 </template>
+
