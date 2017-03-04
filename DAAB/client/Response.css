@@ -53,6 +53,7 @@ body, html {
   background-color: #5D737E;
   border: 4px solid #4FC18A;
   box-shadow: inset 0px 0px 20px 0px rgba(0,0,0,0.35);
+  color: #00203a;
   outline: none;
 }
 
@@ -63,4 +64,5 @@ body, html {
 label {
   font-family: 'Tahoma',sans-serif;
   font-size: 20px;
+  color: #00203a;
 }
