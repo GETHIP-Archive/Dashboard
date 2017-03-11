@@ -44,8 +44,5 @@ body, html {
     width: 100%;
 }
 
-*|*:matches(:hover, :focus) {
-	background-color: red;
-}
 
 
